@@ -6,7 +6,7 @@ To do your first steps it is recommended to read the “[getting started](https:
 clone: `git clone --recurse-submodules https://github.com/intel/Dependency-Reduction-Unit-Framework.git`
 
 ## OS support
-This application has been developed on a Ubuntu 18.4 LTS systems. It also has been tested on a Windows-10 System but does not support all feature (rescue result buffer if gdbMann gets interrupted by CTRL+C) 
+This application has been developed on a Ubuntu 18.4 LTS systems. It also has been tested on a Windows-10 System but does not support all feature (rescue result buffer if gdbMan gets interrupted by CTRL+C) 
 
 
 ## Goals
@@ -24,7 +24,7 @@ This system allows reduction these dependencies by use the debugger.
  
 ## Director structure
  * [deUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)              :   Framework (running on the target) that communicate with the GDBManipulator 
- * [GDB Manipulator(gdbMann)](https://github.com/intel/Dependency-Reduction-Unit-Frameworkwiki/GDBManipulator)    :   Application running on the host machine to reduce the Dependency’s and evaluate the test results
+ * [GDB Manipulator(gdbMan)](https://github.com/intel/Dependency-Reduction-Unit-Frameworkwiki/GDBManipulator)    :   Application running on the host machine to reduce the Dependency’s and evaluate the test results
  * awk               :   some scripts to make [test creation](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation) easier 
  * examples          :   some examples test project 
 
