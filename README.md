@@ -1,7 +1,7 @@
 # Dependency-Reduction-Unit-Framework (deUnit)for C/C++ -Projects 
 For further information’s see the [wiki](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki)! 
 
-To do your first steps it is recommended to read the “[getting started](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Getting-Started-with-eUnit)”!
+To do your first steps it is recommended to read the “[getting started](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Getting-Started-with-deUnit)”!
 
 clone: `git clone --recurse-submodules https://github.com/intel/Dependency-Reduction-Unit-Framework.git`
 
@@ -23,7 +23,7 @@ This system allows reduction these dependencies by use the debugger.
 
  
 ## Director structure
- * [edUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/eUnit)              :   Framework (running on the target) that communicate with the GDBManipulator 
+ * [dedUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)              :   Framework (running on the target) that communicate with the GDBManipulator 
  * [GDB Manipulator(gdbMann)](https://github.com/intel/Dependency-Reduction-Unit-Frameworkwiki/GDBManipulator)    :   Application running on the host machine to reduce the Dependency’s and evaluate the test results
  * awk               :   some scripts to make [test creation](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation) easier 
  * examples          :   some examples test project 
@@ -36,9 +36,9 @@ In order to use this system it is necessary to have a working cli debug environm
 ![Alt text](doc/pic/system.png?raw=true "structure")
 
 
-## Add eUnit into your Projects
+## Add deUnit into your Projects
 
-To add ‘[eUnit](https://github.com/diridari/EmbeddedTesting/wiki/eUnit)’ to you own projects it is just necessary to copy the folder ‘/eUnit’ into you project and call the ‘invokeAllTest()’ from the main. 
+To add ‘[deUnit](https://github.com/diridari/EmbeddedTesting/wiki/deUnit)’ to you own projects it is just necessary to copy the folder ‘/deUnit’ into you project and call the ‘invokeAllTest()’ from the main. 
 To create your own tests each test must get called in the ‘invokeAllTest()’ Function.
 See: [Test creation](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation)
 
@@ -122,14 +122,14 @@ Stubs allow returning every expression as long as the expression has the same re
     whenStub(add5,"add(5,5)");
 
 ***
-# Getting Started with eUnit
+# Getting Started with deUnit
 
-This document descripts how to do the first steps with [eUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/eUnit) with dependeny reduction. It is divided into two Parts:
+This document descripts how to do the first steps with [deUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit) with dependeny reduction. It is divided into two Parts:
 
     using the examples
     use in your own projects
 
-The [eUnit](https://github.com/diridari/EmbeddedTesting/wiki/eUnit)-Framework also allows to use a "Selftest-Mode" mode without the use of the [GDB Manipulator(gdbMann)](https://github.com/diridari/EmbeddedTesting/wiki/GDBManipulator).
+The [deUnit](https://github.com/diridari/EmbeddedTesting/wiki/deUnit)-Framework also allows to use a "Selftest-Mode" mode without the use of the [GDB Manipulator(gdbMann)](https://github.com/diridari/EmbeddedTesting/wiki/GDBManipulator).
 Using the provided examples
 ## Requirements
 
