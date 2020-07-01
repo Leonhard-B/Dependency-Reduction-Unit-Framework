@@ -38,7 +38,7 @@ In order to use this system it is necessary to have a working cli debug environm
 
 ## Add deUnit into your Projects
 
-To add ‘[deUnit](https://github.com/diridari/EmbeddedTesting/wiki/deUnit)’ to you own projects it is just necessary to copy the folder ‘/deUnit’ into you project and call the ‘invokeAllTest()’ from the main. 
+To add ‘[deUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)’ to you own projects it is just necessary to copy the folder ‘/deUnit’ into you project and call the ‘invokeAllTest()’ from the main. 
 To create your own tests each test must get called in the ‘invokeAllTest()’ Function.
 See: [Test creation](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation)
 
@@ -49,7 +49,7 @@ An AWK-Parser allows to create gtest-like testcases and also generates the CallG
 For further information see the readme in the awk-folder or the [wiki]((https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation)). 
 
 ### gdbManipulator (gdbMann)
-The "GDB-Manipulaton"-application([gdbMann]((https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/GDBManipulator))) connects with configures the target depending to the [runMode](https://github.com/diridari/EmbeddedTesting/wiki/gdbMann_Program-arguments#--runmode) and [testLevel](https://github.com/diridari/EmbeddedTesting/wiki/gdbMann_Program-arguments#--testlevel). Then its executes all tests and evaluates the test-result. 
+The "GDB-Manipulaton"-application([gdbMann]((https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/GDBManipulator))) connects with configures the target depending to the [runMode](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/gdbMann_Program-arguments#--runmode) and [testLevel](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/gdbMann_Program-arguments#--testlevel). Then its executes all tests and evaluates the test-result. 
 
 The applications requires at least two [command arguments](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/gdbMann_Program-arguments): 
 
@@ -129,7 +129,7 @@ This document descripts how to do the first steps with [deUnit](https://github.c
     using the examples
     use in your own projects
 
-The [deUnit](https://github.com/diridari/EmbeddedTesting/wiki/deUnit)-Framework also allows to use a "Selftest-Mode" mode without the use of the [GDB Manipulator(gdbMann)](https://github.com/diridari/EmbeddedTesting/wiki/GDBManipulator).
+The [deUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)-Framework also allows to use a "Selftest-Mode" mode without the use of the [GDB Manipulator(gdbMann)](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/GDBManipulator).
 Using the provided examples
 ## Requirements
 
@@ -153,7 +153,7 @@ for example you can use:
 
 If the Target is not jet flashed you need additional to add ‘-f’ to flash the target with the elf-file For Further information’s see the Wiki entry: “Program Arguments”
 
-Run the Application ‘[gdbMann](https://github.com/diridari/EmbeddedTesting/wiki/GDBManipulator)’ with those [arguments](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/gdbMann_Program-arguments). e.g.
+Run the Application ‘[gdbMann](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/GDBManipulator)’ with those [arguments](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/gdbMann_Program-arguments). e.g.
 
     ./gdbMann -elf <elfFile> -s "/opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.0.0/Servers/ST-LINK_gdbserver/ST-LINK_gdbserver -d" -c /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.0.0/ARMTools/bin/arm-atollic-eabi-gdb
 
