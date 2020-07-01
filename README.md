@@ -23,7 +23,7 @@ This system allows reduction these dependencies by use the debugger.
 
  
 ## Director structure
- * [dedUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)              :   Framework (running on the target) that communicate with the GDBManipulator 
+ * [deUnit](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/deUnit)              :   Framework (running on the target) that communicate with the GDBManipulator 
  * [GDB Manipulator(gdbMann)](https://github.com/intel/Dependency-Reduction-Unit-Frameworkwiki/GDBManipulator)    :   Application running on the host machine to reduce the Dependency’s and evaluate the test results
  * awk               :   some scripts to make [test creation](https://github.com/intel/Dependency-Reduction-Unit-Framework/wiki/Test-Syntax-and-Test-creation) easier 
  * examples          :   some examples test project 
